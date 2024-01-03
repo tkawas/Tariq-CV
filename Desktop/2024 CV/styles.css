@@ -1,0 +1,121 @@
+@page {
+    size: A4;
+    margin: 20;
+}
+body {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+header {
+    text-align: center;
+    padding: 0;
+    background-color: #001f3f;
+    color: #f8f8f8;
+}
+
+header h3 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0;
+    display: inline-block;
+    margin-left: 10px; /* Adjust the margin as needed */
+}
+
+header ul li {
+    display: inline-block;
+    margin-right: 10px; /* Adjust the margin as needed */
+    color: #f8f8f8;
+    font-size: 0.9em;
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #001f3f;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 8px;
+    font-size: 0.9em;
+    position: relative;
+}
+
+.other ul li::before {
+    content: "\2022"; /* Bullet point character */
+    color: #001f3f; /* Bullet point color */
+    font-size: 1.2em;
+    position: absolute;
+    left: -0.80em;
+    top: 0em;
+}
+/* Make tables responsive */
+table {
+    width: 100%;
+    overflow-x: auto;
+    display: table; /* Reset display property for larger screens */
+}
+
+/* Set a minimum width for table cells */
+th, td {
+    min-width: 100px;
+}
+
+/* Apply different styles for small screens */
+@media only screen and (max-width: 600px) {
+    table, th, td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .skills-container {
+        justify-content: space-between; /* Adjust as needed */
+    }
+}
+
+
+.skill {
+    flex: 0 0 calc(30%); /* Adjust as needed */
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+p.date {
+    margin-top: 5px; /* Add spacing between the heading and date if necessary */
+}
+
+span.university,
+span.duration {
+    display: inline-block;
+}
+
+span.university {
+    font-size: 1em; /* Adjust the font size for the university name */
+}
+
+span.duration {
+    font-size: 1em; /* Adjust the font size for the duration */
+    margin-left: 5px; /* Add some space between university and duration */
+}

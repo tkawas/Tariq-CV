@@ -5,137 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Tariq Kawas - IT Professional with diverse experience in various domains.">
-    <meta name="keywords" content="Tariq Kawas, IT Professional, Digital Developer, Business Analyst, Project Manager">
+    <meta name="keywords" content="Tariq Kawas, IT Professional, Digital Developer">
     <meta name="author" content="Tariq Kawas">
-    <!-- just a commnet-->
+
     <title>Tariq Kawas - Curriculum Vitae</title>
+
     <!-- Include Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <style>
-        @page {
-            size: A4;
-            margin: 20;
-        }
-        body {
-            font-family: 'Courier New', Courier, monospace;
-            line-height: 1.5;
-            color: #333;
-            background-color: #f8f8f8;
-        }
+    <link rel="stylesheet" href="styles.css">
 
-        header {
-            text-align: center;
-            padding: 0;
-            background-color: #001f3f;
-            color: #f8f8f8;
-        }
-
-        header h3 {
-            margin: 0;
-            font-size: 2em;
-        }
-
-        header ul {
-            list-style-type: none;
-            padding: 0;
-            display: inline-block;
-            margin-left: 10px; /* Adjust the margin as needed */
-        }
-
-        header ul li {
-            display: inline-block;
-            margin-right: 10px; /* Adjust the margin as needed */
-            color: #f8f8f8;
-            font-size: 0.9em;
-        }
-
-        section {
-            margin-bottom: 20px;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            color: #001f3f;
-            font-size: 1.8em;
-            margin-bottom: 10px;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        ul li {
-            margin-bottom: 8px;
-            font-size: 0.9em;
-            position: relative;
-        }
-
-        .other ul li::before {
-            content: "\2022"; /* Bullet point character */
-            color: #001f3f; /* Bullet point color */
-            font-size: 1.2em;
-            position: absolute;
-            left: -0.80em;
-            top: 0em;
-        }
-        /* Make tables responsive */
-        table {
-            width: 100%;
-            overflow-x: auto;
-            display: block;
-        }
-
-        /* Set a minimum width for table cells */
-        th, td {
-            min-width: 100px;
-        }
-
-        /* Apply different styles for small screens */
-        @media only screen and (max-width: 600px) {
-            th, td {
-                min-width: auto;
-                display: block;
-                width: 100%;
-                box-sizing: border-box;
-            }
-        }
-        .skills-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between; /* Adjust as needed */
-        }
-
-        .skill {
-            flex: 0 0 calc(30%); /* Adjust as needed */
-            margin-bottom: 5px;
-            padding: 5px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        p.date {
-            margin-top: 5px; /* Add spacing between the heading and date if necessary */
-        }
-        
-        span.university,
-        span.duration {
-            display: inline-block;
-        }
-        
-        span.university {
-            font-size: 1em; /* Adjust the font size for the university name */
-        }
-        
-        span.duration {
-            font-size: 1em; /* Adjust the font size for the duration */
-            margin-left: 5px; /* Add some space between university and duration */
-        }
-
-    </style>
 </head>
 
 <body>
@@ -165,7 +43,7 @@
     <section>
         <h1><i class="fas fa-star"></i> Key Competencies</h1>
     
-        <table class="competencies-table">
+        <table class="skills-container">
             <tr>
                 <td>
                     <strong>Agile:</strong> Adaptable and collaborative approach to project management methodologies
@@ -217,13 +95,13 @@
     <section>
         <h1><i class="fas fa-code"></i> Key Technical Skills</h1>
     
-        <table class="skills-table">
+        <table class="skills-container">
             <tr>
                 <td>
                     <strong>Power Platform:</strong> PowerApps, Dataverse, PowerAutomate, and business logic
                 </td>
                 <td>
-                    <strong>Tableau/PowerBI Developer:</strong> Data visualisation and reporting
+                    <strong>API Integration:</strong> Connecting and integrating different software applications
                 </td>
                 <td>
                     <strong>DevOps Pipelines:</strong> CI/CD processes for efficient software development
@@ -234,7 +112,7 @@
                     <strong>AWS/ Azure:</strong> Cloud computing services and microservices
                 </td>
                 <td>
-                    <strong>API Integration:</strong> Connecting and integrating different software applications
+                    <strong>Tableau/PowerBI Developer:</strong> Data visualisation and reporting
                 </td>
                 <td>
                     <strong>HTML/CSS:</strong> Building and styling web pages
@@ -418,35 +296,51 @@
 
     <section>
         <h1><i class="fas fa-certificate"></i> Certificates & Training</h1>
-        <table>
-            <tbody>
-                <tr>
-                    <td class="other">
-                        <ul>
-                            <li>AWS Cloud Practitioner Certification (2023)</li>
-                            <li>Image Classification with Amazon Sagemaker (2020)</li>
-                            <li>Developer Learning Plan (2022)</li>
-                        </ul>
-                    </td>
-                    <td class="other">
-                        <ul>
-                            <li>Diploma of Completion User Interface Automation with StudioX (2021)</li>
-                            <li>UiPath– Advanced Developer (2021)</li>
-                            <li>UiPath- Infrastructure Engineer (2021)</li>
-                        </ul>
-                    </td>
-                    <td class="other">
-                        <ul>
-                            <li>Smart Cities Practitioner Certificate (2022)</li>
-                            <li>Data Storytelling and Data Visualization (2022)</li>
-                            <li>Backend & Frontend development by Meta (2023)</li>
-                            <li>SQL for Data Science (2023)</li>
-                            <li>MERN application using Next.js (2023)</li>
-                        </ul>
-                    </td>
-                </tr>
-            </tbody>
+
+        <table class="skills-container">
+            <tr>
+                <td>
+                    AWS Cloud Practitioner Certification (2023)
+                </td>
+                <td>
+                    Image Classification with Amazon Sagemaker (2020)
+                </td>
+                <td>
+                    Developer Learning Plan (2022)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Diploma of Completion User Interface Automation with StudioX (2021)
+                </td>
+                <td>
+                    UiPath– Advanced Developer (2021)
+                </td>
+                <td>
+                    UiPath- Infrastructure Engineer (2021)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Smart Cities Practitioner Certificate (2022)
+                </td>
+                <td>
+                    Data Storytelling and Data Visualization (2022)
+                </td>
+                <td>
+                    Backend & Frontend development by Meta (2023)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    SQL for Data Science (2023)
+                </td>
+                <td>
+                    MERN application using Next.js (2023)
+                </td>
+            </tr>
         </table>
+
     </section>
     
 
