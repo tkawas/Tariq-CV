@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tariq Kawas - IT Professional with diverse experience in various domains.">
+    <meta name="keywords" content="Tariq Kawas, IT Professional, Digital Developer">
+    <meta name="author" content="Tariq Kawas">
+
+    <title>Tariq Kawas - Curriculum Vitae</title>
+
+    <!-- Include Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <h3>Tariq Kawas</h3>
+        <ul>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:Tariq96.ig@gmail.com" style="color: #f8f8f8; text-decoration: none;">Tariq96.ig@gmail.com</a></li>
+            <li><i class="fas fa-phone"></i> <a href="tel:+610406217698" style="color: #f8f8f8; text-decoration: none;">(+61) 0406217698</a></li>
+            <li><i class="fas fa-map-marker-alt"></i> QLD, Australia - Willing to relocate</li>
+            <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/tariq-kawas-542843268/" target="_blank" style="color: #f8f8f8; text-decoration: none;">My LinkedIn</a></li>
+            <li><i class="fab fa-github"></i> <a href="https://github.com/tkawas?tab=repositories" target="_blank" style="color: #f8f8f8; text-decoration: none;">My GitHub</a></li>
+        </ul>
+    </header>
+
+    <nav>
+        <table class="nav-container">
+            <tr>
+                <td>
+                    <a href="CV.html">Back to Home</a>
+                </td>
+                <td>
+                    <a href="#learning-resources">Learning Resources</a>
+                </td>
+                <td>
+                    <a href="#code-snippets">Code Snippets or Playground</a>
+                </td>
+                <td>
+                    <a href="#blog-articles">Blog/Articles</a>
+                </td>
+            </tr>
+        </table>
+    </nav>
+    
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Contact Me</h2>
+            <div id="loader" style="display: none;">
+                <div class="spinner"></div>
+            </div>
+            <div id="success-message" style="display: none; text-align: center; margin-top: 20px;">
+                <p>Thank you for contacting me! I will be sure to get back to you in a timely manner. 😊</p>
+            </div>            
+            <form action="process_contact_form.php" method="post" onsubmit="submit_form(event);">
+                <!-- Form fields go here -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+            
+            <script>
+                function submit_form(event) {
+                    event.preventDefault(); // Prevent the default form submission
+    
+                    document.getElementById("loader").style.display = "flex";
+    
+                    // Simulate sending email (you should replace this with your actual email sending code)
+                    setTimeout(function() {
+                        document.getElementById("loader").style.display = "none";
+                        document.getElementById("success-message").style.display = "block";
+                    }, 2000); // Change the timeout duration as needed
+                }
+            </script>
+        </div>
+    </section>
+    
+
+    <footer>
+        <!-- Include your footer content if any -->
+    </footer>
+</body>
+
+</html>

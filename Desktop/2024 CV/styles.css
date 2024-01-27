@@ -43,6 +43,52 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+nav {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    width: 100%;
+    text-align: center; /* Center the content within the table */
+}
+
+.nav-container td {
+    padding: 10px; /* Add padding for better spacing */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s; /* Add a smooth transition effect */
+
+}
+
+nav a:hover {
+    color: #f00; /* Change the color on hover */
+}
+
+/* Apply different styles for small screens */
+@media only screen and (max-width: 600px) {
+    table, th, td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .nav-container {
+        display: flex;
+        justify-content: center; /* Center the content horizontally on small screens */
+        flex-wrap: wrap;
+        /* Add other styles as needed */
+    }
+}
+
+
 h1 {
     color: #001f3f;
     font-size: 1.8em;
@@ -118,4 +164,78 @@ span.university {
 span.duration {
     font-size: 1em; /* Adjust the font size for the duration */
     margin-left: 5px; /* Add some space between university and duration */
+}
+
+#contact {
+    background-color: #f8f8f8;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form {
+    display: grid;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top: 4px solid #3498db; /* Adjust the color */
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
